@@ -5,6 +5,7 @@ namespace ModernDesign.MVVM.ViewModel
 	class MainViewModel : ObservableObject
 	{
 		public HomeViewModel HomeVM { get; set; }
+		public DiscoveryViewModel DiscoveryVM { get; set; }
 		private object _currentView;
 
 		public object CurrentView
@@ -19,6 +20,7 @@ namespace ModernDesign.MVVM.ViewModel
 		public MainViewModel()
 		{
 			HomeVM = new HomeViewModel();
+			DiscoveryVM = new DiscoveryViewModel();
 			CurrentView = HomeVM;
 		}
 	}
